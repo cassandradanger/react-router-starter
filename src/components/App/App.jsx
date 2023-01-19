@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Link, useHistory } from 'react-router-dom'
 import './App.css';
 
 import Animals from '../Animals/Animals.jsx';
+import AnimalDetail from '../Animals/AnimalDetail.jsx';
 import Plants from '../Plants/Plants.jsx';
 import Home from '../Home/Home.jsx';
 
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route path="/" exact>
           <Home />
+        </Route>
+        <Route path="/animals/:id" exact>
+          <AnimalDetail />
         </Route>
       </div>
     </Router>
